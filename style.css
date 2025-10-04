@@ -60,7 +60,7 @@ body {
 /* Slideshow */
 .slideshow {
   position: relative;
-  max-width: 900px;
+  max-width: 400px;
   margin: 40px auto;
   overflow: hidden;
   border-radius: 10px;
