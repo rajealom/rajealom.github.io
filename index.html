@@ -2,96 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Vlog Blog</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #444;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .post {
-      background: white;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .post h2 {
-      margin-top: 0;
-    }
-    .post iframe {
-      width: 100%;
-      height: 400px;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+  <title>Rajealom - My Vlog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Vlog Blog</h1>
-    <p>Sharing my journey through videos & posts</p>
-  </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Rajealom</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
   </nav>
 
-  <div class="container">
-    <!-- Example Post 1 -->
-    <div class="post">
-      <h2>My First Vlog</h2>
-      <p><em>Posted on October 3, 2025</em></p>
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-      <p>This is my very first vlog! Excited to start sharing my journey.</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Welcome to My Vlog</h1>
+      <p>Sharing my journey, my works, and my learning notes.</p>
     </div>
+  </header>
 
-    <!-- Example Post 2 -->
-    <div class="post">
-      <h2>Study + Life Update</h2>
-      <p><em>Posted on September 25, 2025</em></p>
-      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-      <p>Here’s a quick update on what I’ve been working on lately.</p>
+  <!-- Slideshow Section -->
+  <section class="slideshow">
+    <div class="slides">
+      <img src="assets/images/pic1.jpg" class="slide active">
+      <img src="assets/images/pic2.jpg" class="slide">
+      <img src="assets/images/pic3.jpg" class="slide">
     </div>
-  </div>
+    <div class="slide-controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </section>
 
+  <!-- Intro Section -->
+  <section class="intro">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Raje! This is my personal vlog/blog where I share my daily life, my projects,
+      and my study notes. Scroll around, check my blog, or download notes if you like learning with me!
+    </p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Vlog Blog | Made with ❤ using GitHub Pages</p>
+    <p>© 2025 Rajealom. All rights reserved.</p>
   </footer>
 </body>
 </html>
